@@ -155,19 +155,19 @@
 
   <section class="slide slide--bsa" id="synthetic-event">
     <h2>SyntheticEvent</h2>
-    <div class="synthetic-event__wrapper">
+    <div class="synthetic-event__wrapper next">
       <img class="synthetic-event__img" src="pictures/synthetic-event.jpeg" width="300" height="250" alt="Synthetic Event">
-      <pre class="synthetic-event__code">
+      <pre class="synthetic-event__code next">
         <code><span class="comment">// HTML Element</span></code>
-        <code>&lt;button onclick="handleClick();"&gt;Click&lt;/button&gt;</code>
-        <code>&lt;input onblur="handleBlur();" value="" type="text"&gt;</code>
+        <code>&lt;button <mark>onclick="handleClick();"</mark>&gt;Click&lt;/button&gt;</code>
+        <code>&lt;input <mark>onblur="handleBlur();"</mark> value="" type="text"&gt;</code>
         <code> </code>
         <code><span class="comment">// React Element</span></code>
-        <code>&lt;button onClick={handleClick}&gt;Click&lt;/button&gt;</code>
-        <code>&lt;input onBlur={handleBlur} defaultValue="" type="text" /&gt;</code>
+        <code>&lt;button <mark>onClick={handleClick}</mark>&gt;Click&lt;/button&gt;</code>
+        <code>&lt;input <mark>onBlur={handleBlur}</mark> defaultValue="" type="text" /&gt;</code>
       </pre>
     </div>
-    <a class="virtual-dom__link bottom-link" href="https://reactjs.org/docs/events.html" target="_blank" rel="noreferrer">
+    <a class="synthetic-event__link bottom-link" href="https://reactjs.org/docs/events.html" target="_blank" rel="noreferrer">
       SyntheticEvent
     </a>
 
@@ -181,6 +181,33 @@
 
       #synthetic-event .synthetic-event__code {
         font-size: 14px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="prop-type">
+    <h2>PropTypes</h2>
+    <pre class="prop-type__code">
+      <code><span class="comment">// src/components/greeting/greeting.jsx</span></code>
+      <code>import <mark>PropTypes</mark> from 'prop-types';</code>
+      <div class="next">
+        <code> </code>
+        <code>const Greeting = ({ name }) => (</code>
+        <code>  &lt;h1&gt;Hello, {name}&lt;/h1&gt;</code>
+        <code>);</code>
+        <code> </code>
+        <code>Greeting.propTypes = {</code>
+        <code>  name: <mark>PropTypes.string</mark></code>
+        <code>};</code>
+      </div>
+    </pre>
+    <a class="prop-type__link bottom-link" href="https://reactjs.org/docs/typechecking-with-proptypes.html" target="_blank" rel="noreferrer">
+      PropTypes
+    </a>
+
+    <style>
+      #prop-type .prop-type__code {
+        font-size: 18px;
       }
     </style>
   </section>
