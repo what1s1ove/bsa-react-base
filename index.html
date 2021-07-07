@@ -153,6 +153,38 @@
     </style>
   </section>
 
+  <section class="slide slide--bsa" id="synthetic-event">
+    <h2>SyntheticEvent</h2>
+    <div class="synthetic-event__wrapper">
+      <img class="synthetic-event__img" src="pictures/synthetic-event.jpeg" width="300" height="250" alt="Synthetic Event">
+      <pre class="synthetic-event__code">
+        <code><span class="comment">// HTML Element</span></code>
+        <code>&lt;button onclick="handleClick();"&gt;Click&lt;/button&gt;</code>
+        <code>&lt;input onblur="handleBlur();" value="" type="text"&gt;</code>
+        <code> </code>
+        <code><span class="comment">// React Element</span></code>
+        <code>&lt;button onClick={handleClick}&gt;Click&lt;/button&gt;</code>
+        <code>&lt;input onBlur={handleBlur} defaultValue="" type="text" /&gt;</code>
+      </pre>
+    </div>
+    <a class="virtual-dom__link bottom-link" href="https://reactjs.org/docs/events.html" target="_blank" rel="noreferrer">
+      SyntheticEvent
+    </a>
+
+    <style>
+      #synthetic-event .synthetic-event__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin: 80px 0 0;
+      }
+
+      #synthetic-event .synthetic-event__code {
+        font-size: 14px;
+      }
+    </style>
+  </section>
+
   <section class="slide slide--bsa" id="thanks">
     <h2>Thanks 🫐</h2>
 
