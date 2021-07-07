@@ -20,6 +20,14 @@
       background-position: right 20px bottom 25px, left 20px bottom 15px;
       background-size: 75px, 50px;
     }
+
+    .bottom-link {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body class="shower list">
@@ -53,6 +61,19 @@
 
       #cover .cover__link {
         background-image: none;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="library">
+    <h2 class="library__title">React <span class="next"> — a library</span></h2>
+    <a class="library__link bottom-link" href="https://reactjs.org/" target="_blank" rel="noreferrer">
+      reactjs.org
+    </a>
+
+    <style>
+      #library .library__title {
+        margin: 180px 0 0;
       }
     </style>
   </section>
