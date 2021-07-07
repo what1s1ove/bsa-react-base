@@ -187,7 +187,7 @@
 
   <section class="slide slide--bsa" id="prop-type">
     <h2>PropTypes</h2>
-    <pre class="prop-type__code">
+    <pre class="prop-type__code next">
       <code><span class="comment">// src/components/greeting/greeting.jsx</span></code>
       <code>import <mark>PropTypes</mark> from 'prop-types';</code>
       <div class="next">
@@ -273,6 +273,56 @@
       <li class="next">The value is changed through a props callback</li>
       <li class="next">The logic for handling value changes is entirely up to the developer.</li>
     </ul>
+  </section>
+
+  <section class="slide slide--bsa" id="react-hooks">
+    <h2>React Hooks</h2>
+    <p class="next">Hooks are an addition in React <b>16.8</b>. They let you use the state and do side effects</p>
+    <pre class="next">
+      <code>const Counter = () => {</code>
+      <code class="mark next">  const [count, setCount] = React.useState(0);</code>
+      <code>  return ( </code>
+      <code>    &lt;div&gt; </code>
+      <code class="mark next">      &lt;p&gt;You clicked {count} times&lt;/p&gt; </code>
+      <code class="mark next">      &lt;button onClick={() => setCount(count + 1)}> </code>
+      <code>        Click me </code>
+      <code>      &lt;/button&gt; </code>
+      <code>    &lt;/div&gt; </code>
+      <code>  ); </code>
+      <code>}</code>
+    </pre>
+    <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noreferrer">reactjs.org/hooks-intro</a>
+
+    <style>
+      #react-hooks {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #react-hooks h2 {
+        margin-bottom: 10px;
+      }
+
+      #react-hooks p {
+        font-size: 17px;
+      }
+
+      #react-hooks pre {
+        font-size: 14px;
+        display: none;
+      }
+
+      #react-hooks pre.active,
+      #react-hooks pre.visited {
+        display: block;
+      }
+
+      #react-hooks a {
+        align-self: center;
+        margin: auto 0 30px;
+        font-size: 12px;
+      }
+    </style>
   </section>
 
   <section class="slide slide--bsa" id="thanks">
