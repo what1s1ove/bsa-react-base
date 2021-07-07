@@ -276,9 +276,9 @@
   </section>
 
   <section class="slide slide--bsa" id="react-hooks">
-    <h2>React Hooks</h2>
-    <p class="next">Hooks are an addition in React <b>16.8</b>. They let you use the state and do side effects</p>
-    <pre class="next">
+    <h2 class="react-hooks__title">React Hooks 🪝</h2>
+    <p class="react-hooks__desc next">Hooks are an addition in React <b>16.8</b>. They let you use the state and do side effects</p>
+    <pre class="react-hooks__code next">
       <code>const Counter = () => {</code>
       <code class="mark next">  const [count, setCount] = React.useState(0);</code>
       <code>  return ( </code>
@@ -291,7 +291,7 @@
       <code>  ); </code>
       <code>}</code>
     </pre>
-    <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noreferrer">reactjs.org/hooks-intro</a>
+    <a class="react-hooks__link bottom-link" href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noreferrer">reactjs.org/hooks-intro</a>
 
     <style>
       #react-hooks {
@@ -299,28 +299,22 @@
         flex-direction: column;
       }
 
-      #react-hooks h2 {
+      #react-hooks .react-hooks__title {
         margin-bottom: 10px;
       }
 
-      #react-hooks p {
+      #react-hooks .react-hooks__desc {
         font-size: 17px;
       }
 
-      #react-hooks pre {
+      #react-hooks .react-hooks__code {
         font-size: 14px;
         display: none;
       }
 
-      #react-hooks pre.active,
-      #react-hooks pre.visited {
+      #react-hooks .react-hooks__code.active,
+      #react-hooks .react-hooks__code.visited {
         display: block;
-      }
-
-      #react-hooks a {
-        align-self: center;
-        margin: auto 0 30px;
-        font-size: 12px;
       }
     </style>
   </section>
@@ -330,14 +324,14 @@
     <ul>
       <li class="next">Hook is a function. The function is called every time the component is rendered</li>
       <li class="next">React tracks calls of these functions</li>
-      <li class="next">Hook is a common function but with a bit of magic</li>
+      <li class="next">Hook is a common function but with a bit of magic 🪄</li>
     </ul>
   </section>
 
   <section class="slide slide--bsa" id="hooks-limitations">
     <h2>Hooks Limitations</h2>
     <ul class="next">
-      <li class="next">The sequence of Hook is important. Cannot be used in conditions, loops</li>
+      <li>The sequence of Hook is important. Cannot be used in conditions, loops</li>
       <li class="next">Hooks can only be used in components or custom hooks</li>
       <li class="next">
         No support for all lifecycle methods:
@@ -348,6 +342,42 @@
         </ul>
       </li>
     </ul>
+  </section>
+
+  <section class="slide slide--bsa" id="react-hooks-api">
+    <h2 class="react-hooks-api__title">Hooks API 🪝</h2>
+    <ul class="react-hooks-api__list next">
+      <li class="react-hooks-api__item">
+        <a href="https://reactjs.org/docs/hooks-reference.html#usestate" target="_blank" rel="noreferrer">useState</a>
+      </li>
+      <li class="react-hooks-api__item next">
+        <a href="https://reactjs.org/docs/hooks-reference.html#useeffect" target="_blank" rel="noreferrer">useEffect</a>
+      </li>
+      <li class="react-hooks-api__item next">
+        <a href="https://reactjs.org/docs/hooks-reference.html#usecallback" target="_blank" rel="noreferrer">useCallback</a>
+      </li>
+      <li class="react-hooks-api__item next">
+        <a href="https://reactjs.org/docs/hooks-reference.html#usememo" target="_blank" rel="noreferrer">useMemo</a>
+        and etc.
+      </li>
+    </ul>
+    <a class="react-hooks-api__link bottom-link" href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noreferrer">reactjs.org/hooks-api</a>
+
+    <style>
+      #react-hooks-api {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #react-hooks-api .react-hooks-api__list {
+        font-size: 20px;
+        margin-right: 50px;
+      }
+
+      #react-hooks-api .react-hooks-api__item {
+        white-space: nowrap;
+      }
+    </style>
   </section>
 
   <section class="slide slide--bsa" id="thanks">
