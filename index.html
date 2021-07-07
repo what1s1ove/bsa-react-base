@@ -216,12 +216,29 @@
     <h2 class="state-is__title">State</h2>
     <p class="state-is__description next">Internal data of a component or application</p>
 
-
     <style>
       #state-is .state-is__title {
         margin: 180px 0 0;
       }
     </style>
+  </section>
+
+  <section class="slide slide--bsa" id="state-variants">
+    <h2>Solution Options</h2>
+    <ol class="next">
+      <li>Implement a chain of callback</li>
+      <li class="next">Save to global scope. For example <code>window.currentState</code></li>
+      <li class="next">Move logic to the URL and set the task to the backend developer</li>
+    </ol>
+  </section>
+
+  <section class="slide slide--bsa" id="state-solutions">
+    <h2>Problems of the solutions</h2>
+    <ol class="next">
+      <li>The application must remember the order of callbacks</li>
+      <li class="next">We'll have to update the whole app with <code>ReactDOM.render</code></li>
+      <li class="next">Excellent option. But we don't have a backend developer, and the state will be rigidly tied to the URL</li>
+    </ol>
   </section>
 
   <section class="slide slide--bsa" id="thanks">
