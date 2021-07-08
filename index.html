@@ -427,7 +427,7 @@
 
   <section class="slide slide--bsa" id="rca">
     <h2 class="rca__title">React Create App</h2>
-    <img class="rca__img" src="pictures/rca.svg" width="300" height="300" alt="Todo Logo">
+    <img class="rca__img next" src="pictures/rca.svg" width="300" height="300" alt="Todo Logo">
     <a class="rca__link bottom-link" href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noreferrer">
       reactjs.org/hooks-api
     </a>
@@ -445,6 +445,116 @@
     </style>
   </section>
 
+  <section class="slide slide--bsa" id="react-devtools">
+    <h2 class="react-devtools__title">React Developer Tools</h2>
+    <img class="react-devtools__img next" src="pictures/react-devtools.png" width="500" height="100"  alt="Todo Logo">
+    <a class="react-devtools__link bottom-link" href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noreferrer">
+      React DevTools
+    </a>
+
+    <style>
+      #react-devtools .react-devtools__img {
+        display: block;
+        margin: 130px auto;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="react-router">
+    <h2>React Router</h2>
+    <img class="next" src="pictures/react-router-logo.svg" width="250" alt="React Router">
+    <a href="https://reactrouter.com/" target="_blank" rel="noreferrer">
+      React Router
+    </a>
+
+    <style>
+      #react-router {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #react-router h2 {
+        margin-bottom: 100px;
+      }
+
+      #react-router img {
+        align-self: center;
+      }
+
+      #react-router a {
+        align-self: center;
+        margin: auto 0 30px;
+        font-size: 12px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="react-router-example">
+    <h2>React Router</h2>
+    <div class="react-router-example__wrapper next">
+      <ul>
+        <li>
+          <a href="https://reactrouter.com/web/api/BrowserRouter" target="_blank" rel="noreferrer">BrowserRouter</a>
+        </li>
+        <li class="next">
+          <a href="https://reactrouter.com/web/api/Route" target="_blank" rel="noreferrer">Route</a>
+          <ul>
+            <li>path</li>
+            <li>component</li>
+            <li>exact</li>
+          </ul>
+        </li>
+        <li class="next">
+          <a href="https://reactrouter.com/web/api/Switch" target="_blank" rel="noreferrer">Switch</a>
+        </li>
+        <li class="next">
+          <a href="https://reactrouter.com/web/api/Link" target="_blank" rel="noreferrer">Link</a>
+          <ul>
+            <li>to</li>
+          </ul>
+        </li>
+        <li class="next">
+          <a href="https://reactrouter.com/web/api/Redirect" target="_blank" rel="noreferrer">Redirect</a>
+          <ul>
+            <li>to</li>
+          </ul>
+        </li>
+      </ul>
+      <pre>
+        <code>import { <mark>BrowserRouter</mark>, <mark>Route</mark>, <mark>Switch</mark>, <mark>Link</mark> } from 'react-router-dom';</code>
+        <code> </code>
+        <code>const App = () => ( </code>
+        <code>  <mark>&lt;BrowserRouter&gt;</mark> </code>
+        <code>    &lt;&gt; </code>
+        <code>      &lt;ul&gt; </code>
+        <code>        &lt;li&gt;<mark>&lt;Link to={AppRoute.ROOT}&gt;</mark>Home<mark>&lt;/Link&gt;</mark>&lt;/li&gt;</code>
+        <code>        &lt;li&gt;<mark>&lt;Link to={AppRoute.ABOUT}&gt;</mark>About<mark>&lt;/Link&gt;</mark>&lt;/li&gt;</code>
+        <code>      &lt;/ul&gt; </code>
+        <code>      <mark>&lt;Switch&gt;</mark> </code>
+        <code>        <mark>&lt;Route path={AppRoute.ABOUT} component={About} /&gt;</mark></code>
+        <code>        <mark>&lt;Route path={AppRoute.ROOT} component={Home} /&gt;</mark></code>
+        <code>      <mark>&lt;/Switch&gt;</mark> </code>
+        <code>    &lt;/&gt; </code>
+        <code>  <mark>&lt;/BrowserRouter&gt;</mark></code>
+        <code>); </code>
+      </pre>
+    </div>
+
+    <style>
+      #react-router-example .react-router-example__wrapper {
+        display: flex;
+      }
+
+      #react-router-example ul {
+        font-size: 14px;
+        margin-right: 50px;
+      }
+
+      #react-router-example pre {
+        font-size: 11px;
+      }
+    </style>
+  </section>
 
   <section class="slide slide--bsa" id="thanks">
     <h2>Thanks 🫐</h2>
