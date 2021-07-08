@@ -317,7 +317,7 @@
   <section class="slide slide--bsa" id="how-hooks-work">
     <h2>How Hooks Work</h2>
     <ul>
-      <li class="next">Hook is a function. The function is called every time the component is rendered</li>
+      <li class="next">Hook is a global function. The function is called every time the component is rendered</li>
       <li class="next">React tracks calls of these functions</li>
       <li class="next">Hook is a common function but with a bit of magic 🪄</li>
     </ul>
@@ -326,16 +326,9 @@
   <section class="slide slide--bsa" id="hooks-limitations">
     <h2>Hooks Limitations</h2>
     <ul class="next">
-      <li>The sequence of Hook is important. Cannot be used in conditions, loops</li>
+      <li>The sequence of hook is important. Cannot be used in conditions, loops</li>
       <li class="next">Hooks can only be used in components or custom hooks</li>
-      <li class="next">
-        No support for all lifecycle methods:
-        <ul>
-          <li>getSnapshotBeforeUpdate</li>
-          <li>getDerivedStateFromError</li>
-          <li>componentDidCatch</li>
-        </ul>
-      </li>
+      <li class="next">No support for all lifecycle methods: <code>getSnapshotBeforeUpdate</code>, <code>getDerivedStateFromError</code>, <code>componentDidCatch</code></li>
     </ul>
   </section>
 
