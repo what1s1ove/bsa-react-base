@@ -625,6 +625,43 @@
     </style>
   </section>
 
+  <section class="slide slide--bsa" id="legacy">
+    <h2 class="legacy__title">Legacy 🪦</h2>
+
+    <style>
+      #legacy .legacy__title {
+        margin: 180px 0 0;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="class-components">
+    <h2>Class Components</h2>
+    <pre class="class-components__code">
+      <code>class Welcome extends React.Component {</code>
+      <code> constructor(props) {</code>
+      <code>  super(props);</code>
+      <code>  <mark>this.state</mark> = {</code>
+      <code>    name: 'John',</code>
+      <code>   };</code>
+      <code>  }</code>
+      <code> </code>
+      <code>  render() {</code>
+      <code>    return &lt;h1&gt;Hello, <mark>{this.state.name}</mark> <mark>{this.props.surname}</mark>&lt;/h1&gt;;</code>
+      <code>  }</code>
+      <code>}</code>
+    </pre>
+    <a class="class-components__lint bottom-link" href="https://reactjs.org/docs/react-component.html" target="_blank" rel="noreferrer">
+      React.Component
+    </a>
+
+    <style>
+      #class-components .class-components__code {
+        font-size: 13px;
+      }
+    </style>
+  </section>
+
   <section class="slide slide--bsa" id="thanks">
     <h2>Thanks 🫐</h2>
 
