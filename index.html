@@ -482,7 +482,7 @@
   <section class="slide slide--bsa" id="location-api">
     <h2 class="location-api__title">Location API 🧭</h2>
     <p class="location-api__description next">Control URL using JavaScript</p>
-    <a class="location-api__lint bottom-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Location" target="_blank" rel="noreferrer">
+    <a class="location-api__link bottom-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Location" target="_blank" rel="noreferrer">
       Location API
     </a>
 
@@ -496,7 +496,7 @@
   <section class="slide slide--bsa" id="location-api-example">
     <h2 class="location-api__title">Location API 🧭</h2>
     <img class="react-router__img next" class="next" src="pictures/academy-link.png" width="650" alt="Academy link">
-    <a class="react-router__lint bottom-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Location" target="_blank" rel="noreferrer">
+    <a class="react-router__link bottom-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Location" target="_blank" rel="noreferrer">
       Location API
     </a>
 
@@ -538,7 +538,7 @@
         <code>window.history.pushState(state, title, url)</code>
       </li>
     </ul>
-    <a class="history-api-examples__lint bottom-link" href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" target="_blank" rel="noreferrer">
+    <a class="history-api-examples__link bottom-link" href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" target="_blank" rel="noreferrer">
       History API
     </a>
   </section>
@@ -546,7 +546,7 @@
   <section class="slide slide--bsa" id="react-router">
     <h2 class="react-router__title">React Router 🗺</h2>
     <img class="react-router__img next" class="next" src="pictures/react-router-logo.svg" width="350" height="200" alt="React Router">
-    <a class="react-router__lint bottom-link" href="https://reactrouter.com/" target="_blank" rel="noreferrer">
+    <a class="react-router__link bottom-link" href="https://reactrouter.com/" target="_blank" rel="noreferrer">
       React Router
     </a>
 
@@ -636,7 +636,7 @@
   </section>
 
   <section class="slide slide--bsa" id="class-components">
-    <h2>Class Components</h2>
+    <h2>React.Component</h2>
     <pre class="class-components__code next">
       <code>class Welcome extends React.Component {</code>
       <code> constructor(props) {</code>
@@ -651,7 +651,7 @@
       <code>  }</code>
       <code>}</code>
     </pre>
-    <a class="class-components__lint bottom-link" href="https://reactjs.org/docs/react-component.html" target="_blank" rel="noreferrer">
+    <a class="class-components__link bottom-link" href="https://reactjs.org/docs/react-component.html" target="_blank" rel="noreferrer">
       React.Component
     </a>
 
@@ -665,7 +665,7 @@
   <section class="slide slide--bsa" id="react-lifecycle">
     <h2>Class Components Lifecycle Methods</h2>
     <img class="react-lifecycle__img next" src="pictures/react-lifecycle.png" width="530" height="350" alt="Class Components Lifecycle Methods">
-    <a class="react-lifecycle__lint bottom-link" href="https://reactjs.org/docs/react-component.html" target="_blank" rel="noreferrer">
+    <a class="react-lifecycle__link bottom-link" href="https://reactjs.org/docs/react-component.html" target="_blank" rel="noreferrer">
       The Component Lifecycle
     </a>
 
@@ -675,7 +675,56 @@
         margin: 30px auto 0;
       }
     </style>
+  </section>
 
+  <section class="slide slide--bsa" id="class-pure-components">
+    <h2>React.PureComponent</h2>
+    <pre>
+      <code><span class="comment">// By default with a shallow prop and state comparison</code>
+      <code>class Welcome extends React.PureComponent {}</code>
+      <div class="next">
+        <code> </code>
+        <code><span class="comment">// By default with a shallow prop and state comparison</code>
+        <code>const Welcome = React.memo((props) => {})</code>
+      </div>
+    </pre>
+    <a class="react-lifecycle__link bottom-link" href="https://reactjs.org/docs/react-api.html" target="_blank" rel="noreferrer">
+      React Api
+    </a>
+  </section>
+
+  <section class="slide slide--bsa" id="hoc">
+    <h2>Higher Order Component</h2>
+    <pre class="hoc__code next">
+      <code class="mark next">const withModalState = (Component) => {</code>
+      <code class="mark next">  return class WithModalState extends React.Component {</code>
+      <code>    constructor(props) {</code>
+      <code>      super(props);</code>
+      <code>      this.state = {</code>
+      <code>        isOpen: false,</code>
+      <code>      };</code>
+      <code>      this.handleModalToggle = this.handleModalToggle.bind(this);</code>
+      <code>    }</code>
+      <code> </code>
+      <code>    handleModalToggle() {</code>
+      <code>      this.setState({ isOpen: !this.state.isOpen })</code>
+      <code>    }</code>
+      <code> </code>
+      <code>    render() {</code>
+      <code class="mark next">      return &lt;Component {...this.props} onModalToggle={this.handleModalToggle} isOpen={this.state.isOpen} /&gt;; </code>
+      <code>    }</code>
+      <code>  }</code>
+      <code>}</code>
+    </pre>
+    <a class="hoc__link bottom-link" href="https://reactjs.org/docs/higher-order-components.html" target="_blank" rel="noreferrer">
+      Higher-Order Components
+    </a>
+
+    <style>
+      #hoc .hoc__code {
+        font-size: 9px;
+      }
+    </style>
   </section>
 
   <section class="slide slide--bsa" id="thanks">
@@ -685,6 +734,16 @@
       #thanks {
         display: grid;
         place-content: center;
+      }
+
+      #hoc .hoc__code {
+        display: none;
+        font-size: 14px;
+      }
+
+      #hoc .hoc__code.active,
+      #hoc .hoc__code.visited {
+        display: block;
       }
     </style>
   </section>
