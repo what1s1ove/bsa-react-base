@@ -116,9 +116,9 @@
   </section>
 
   <section class="slide slide--bsa" id="app-overview">
-    <h2>App Overview</h2>
-    <a href="http://localhost:3000/" target="_blank" rel="noreferrer">
-      <img src="pictures/todolist-logo.svg" width="200" alt="Todo Logo">
+    <h2 class="app-overview__title">App Overview</h2>
+    <a class="app-overview__link" href="http://localhost:3000/" target="_blank" rel="noreferrer">
+      <img src="pictures/todolist-logo.svg" width="280" height="280" alt="Todo Logo">
     </a>
 
     <style>
@@ -127,11 +127,11 @@
         flex-direction: column;
       }
 
-      #app-overview h2 {
-        margin-bottom: 100px;
+      #app-overview .app-overview__title {
+        margin-bottom: 50px;
       }
 
-      #app-overview a {
+      #app-overview .app-overview__link {
         align-self: center;
         background-image: none;
       }
@@ -369,7 +369,9 @@
         <code>}</code>
       </pre>
     </div>
-    <a class="react-hooks-api__link bottom-link" href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noreferrer">reactjs.org/hooks-api</a>
+    <a class="react-hooks-api__link bottom-link" href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noreferrer">
+      reactjs.org/hooks-api
+    </a>
 
     <style>
       #react-hooks-api .react-hooks-api__wrapper {
@@ -422,6 +424,27 @@
       }
     </style>
   </section>
+
+  <section class="slide slide--bsa" id="rca">
+    <h2 class="rca__title">React Create App</h2>
+    <img class="rca__img" src="pictures/rca.svg" width="300" height="300" alt="Todo Logo">
+    <a class="rca__link bottom-link" href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noreferrer">
+      reactjs.org/hooks-api
+    </a>
+
+    <style>
+      #rca {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #rca .rca__img {
+        display: block;
+        margin: 20px auto 0;
+      }
+    </style>
+  </section>
+
 
   <section class="slide slide--bsa" id="thanks">
     <h2>Thanks 🫐</h2>
