@@ -294,11 +294,6 @@
     <a class="react-hooks__link bottom-link" href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noreferrer">reactjs.org/hooks-intro</a>
 
     <style>
-      #react-hooks {
-        display: flex;
-        flex-direction: column;
-      }
-
       #react-hooks .react-hooks__title {
         margin-bottom: 10px;
       }
@@ -364,11 +359,6 @@
     <a class="react-hooks-api__link bottom-link" href="https://reactjs.org/docs/hooks-reference.html" target="_blank" rel="noreferrer">reactjs.org/hooks-api</a>
 
     <style>
-      #react-hooks-api {
-        display: flex;
-        flex-direction: column;
-      }
-
       #react-hooks-api .react-hooks-api__list {
         font-size: 20px;
         margin-right: 50px;
@@ -376,6 +366,37 @@
 
       #react-hooks-api .react-hooks-api__item {
         white-space: nowrap;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="custom-hooks">
+    <h2 class="custom-hooks__title">Custom Hooks</h2>
+    <pre class="custom-hooks__code next">
+      <code class="mark next">const useModalState = (initialOpen = false) => {</code>
+      <code class="mark next">  const [isOpen, setIsOpen] = useState(initialOpen); </code>
+      <code> </code>
+      <code>  const handleOpen = () => setIsOpen(true); </code>
+      <code>  const handleClose = () => setIsOpen(false); </code>
+      <code> </code>
+      <code>  return { </code>
+      <code>    isOpen, </code>
+      <code>    handleOpen, </code>
+      <code>    handleClose, </code>
+      <code>  }; </code>
+      <code>}; </code>
+    </pre>
+    <a class="custom-hooks__link bottom-link" href="https://reactjs.org/docs/hooks-custom.html" target="_blank" rel="noreferrer">reactjs.org/custom-hooks</a>
+
+    <style>
+      #custom-hooks .custom-hooks__code {
+        display: none;
+        font-size: 14px;
+      }
+
+      #custom-hooks .custom-hooks__code.active,
+      #custom-hooks .custom-hooks__code.visited {
+        display: block;
       }
     </style>
   </section>
