@@ -65,6 +65,42 @@
     </style>
   </section>
 
+  <section class="slide slide--bsa" id="spa">
+    <h2>MPA vs SPA</h2>
+    <ul class="spa__list next">
+      <li class="spa__item">
+        <img class="spa__img" src="pictures/mpa.png" width="380" alt="MPA">
+        <h3 class="spa__title">Multi-page application</h3>
+      </li>
+      <li class="spa__item next">
+        <img class="spa__img" src="pictures/spa.png" width="380" alt="MPA">
+        <h3 class="spa__title">Single-page application</h3>
+      </li>
+    </ul>
+
+    <style>
+      #spa .spa__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      #spa .spa__list {
+        margin: 65px 0 0;
+      }
+
+      #spa .spa__item::before {
+        display: none;
+      }
+
+      #spa .spa__title {
+        text-align: center;
+      }
+    </style>
+  </section>
+
   <section class="slide slide--bsa" id="library">
     <h2 class="library__title">React <span class="next"> — a library</span></h2>
     <a class="library__link bottom-link" href="https://reactjs.org/" target="_blank" rel="noreferrer">
@@ -91,10 +127,10 @@
 
   <section class="slide slide--bsa" id="why-needed">
     <h2>Why React is needed</h2>
-    <ul>
+    <ul class="next">
       <li>Rendering</li>
-      <li>Simplifies interface management</li>
-      <li>Good for projects with dynamic content</li>
+      <li class="next">Simplifies interface management</li>
+      <li class="next">Good for projects with dynamic content</li>
     </ul>
   </section>
 
@@ -559,7 +595,7 @@
   </section>
 
   <section class="slide slide--bsa" id="react-router-example">
-    <h2>React Router</h2>
+    <h2>React Router 🗺</h2>
     <div class="react-router-example__wrapper next">
       <ul>
         <li>
@@ -678,8 +714,8 @@
   </section>
 
   <section class="slide slide--bsa" id="class-pure-components">
-    <h2>React.PureComponent</h2>
-    <pre>
+    <h2 class="class-pure-components__title">React.PureComponent</h2>
+    <pre class="class-pure-components__code next">
       <code><span class="comment">// By default with a shallow prop and state comparison</code>
       <code>class Welcome extends React.PureComponent {}</code>
       <div class="next">
